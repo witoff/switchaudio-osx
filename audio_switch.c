@@ -504,7 +504,7 @@ void showAllDevices(ASDeviceType typeRequested, ASOutputType outputRequested) {
 
 		switch(outputRequested) {
 			case kFormatHuman:
-			    printf("%s\n",deviceName);
+			    printf("%u %s\n",dev_array[i], deviceName);
 				break;
 			case kFormatCLI:
 				printf("%s,%s,%u,%s\n",deviceName,deviceTypeName(device_type),dev_array[i],getDeviceUID(dev_array[i]));
